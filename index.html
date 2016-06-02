@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Environmental Hazards</title>
+    <script src="js/createjs-2015.11.26.min.js"></script>
+    <style>
+        canvas{
+            background-color: #3876B2;
+        }
+        input{
+            position: absolute;
+            left: 30px;
+            top: 350px;
+        }
+        input.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="900" height="600"></canvas>
+<form>
+<input class="hidden" type="text" name="energy">
+</form>
+<script src="js/Game.js"></script>
+<script src="js/Preloader.js"></script>
+<script>
+    Game.init();
+</script>
+</body>
+</html>
